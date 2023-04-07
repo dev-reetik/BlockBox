@@ -5,11 +5,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <title>Dashboard</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style_dashboard.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" ></script>
 </head>
 
-<body>
+<body id="DASH">
     <script type="text/javascript">
         //checking for metamask
         var account = null;
@@ -55,7 +57,23 @@
         <p>MedLock &copy; 2023</p>
         <span id="power">Powered by Replit, Metamask, FileCoin.</span>
     </div>
-    <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+    
+    <script src="three.r134.min.js"></script>
+    <script src="vanta.net.min.js"></script>
+    <script>
+    VANTA.NET({
+      el: "#DASH",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xa2,
+      backgroundColor: 0x0
+    })
+    </script>
 </body>
 
 </html>

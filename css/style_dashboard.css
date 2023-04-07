@@ -186,22 +186,6 @@ margin: 20px;
     
 }
 
-.Glass{
-    height: 30%;
-    align-items: center;
-    background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
-    border-radius: 20px;
-    -webkit-backdrop-filter: blur(05px);
-    backdrop-filter: blur(05px);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 05%;
-   
-  }
-  
-
- 
-
 
 
 
@@ -217,8 +201,6 @@ margin: 20px;
     padding-right: 5%;
     color: #F8f8f8;
     text-align: justify;
-    word-spacing: 4.5px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .main span#button_flex {
