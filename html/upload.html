@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Upload</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script type="module" src="/store.js" ></script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //checking for metamask
+        var account = null;
+        (async () => {
+            if (window.ethereum) {
+                await window.ethereum.send('eth_requestAccounts');
+                window.web3 = new Web3(window.ethereum);
+
+                var accounts = await web3.eth.getAccounts();
+                account = accounts[0];
+                console.log("Active");
+            }
+
+            else {
+                window.alert("Please install MetaMask to login!")
+                window.location.replace("/html/login.html");
+            }
+        })();
+    </script>
+
+    <div class="navbar">
+        <span id="logo">MedLock</span>
+        <a href="/index.html">Home</a>
+        <a href="/html/about.html">About</a>
+        <a href="/html/Team.html">Team</a>
+        <a href="/html/docs.html">Docs</a>
+        <a href="/html/dashboard.html" id="active">Dashboard</a>
+    </div>
+
+    <div class="main">
+        <h1>Upload A File</h1>
+        <h2>Add a new file over FileCoin Web3 Storage.</h2><br>
+        <form>
+            <input type="file" name="file" id="file">
+            <button type="button" id="submit">Upload</button>
+        </form><br>
+        <h4><b>Note: </b>After a successful upload, please note down your file <b>CID</b> inorder to retrieve it.</h4>
+    </div>
+
+    <div class="footer">
+        <p>MedLock &copy; 2023</p>
+        <span id="power">Powered by Replit, Metamask, FileCoin.</span>
+    </div>
+    <!-- <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> -->
+</body>
+
+</html>
