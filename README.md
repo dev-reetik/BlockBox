@@ -1,4 +1,4 @@
-<h1>Medlock</h1>
+<h1>BlockBox</h1>
 
 <h2>Summary</h2>
 BlockBox is a decentralized application designed for storing and managing files using the Filecoin decentralized storage network and the InterPlanetary File System (IPFS). The application uses web3 technology to facilitate interactions between users and the Filecoin network, while Metamask authentication provides an additional layer of security for accessing and managing files. BlockBox use of IPFS and Filecoin ensures that files are stored in a decentralized manner, making it more secure and resistant to single points of failure. In addition, the use of blockchain-based technologies such as Filecoin and web3 ensures that data is tamper-proof and cannot be easily altered. By leveraging these technologies, BlockbOX provides a powerful solution for professionals who need to securely store and manage their files  . Overall, BlockBox is a promising application that showcases the potential of decentralized technologies for improving the security and accessibility of sensitive data in any industry.
