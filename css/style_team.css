@@ -23,7 +23,7 @@ html {
 
 body {
 	font-family: 'Poppins', sans-serif;
-    background-color: #38349c;
+    /* background-color: #05050f; */
 	color: #FFFFFF;
     
     background-size: cover;
@@ -51,6 +51,10 @@ a {
     padding: 0 20px;
     z-index: 999;
     padding-right: 50px;
+    background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
 }
 
 .navbar a {
@@ -129,10 +133,16 @@ gap: 10%;
   height: 100%;
 margin: 20px;
  border-radius: 20px;
+ /* background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%); */
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
  box-shadow: 0 0 05px #fff;
+ transition: all 1s ease-out;
   }
   .team-member:hover{
-   box-shadow: 0 0 05px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00bfff, 0 0 70px #00bfff, 0 0 80px #00bfff, 0 0 100px #00bfff, 0 0 150px #00bfff;
+    box-shadow: 0 0 05px #ffffff93, 0 0 2px #ffffff8e, 0 0 3px #0f0303, 0 0 4px #00bfff, 0 0 7px #1900ff98, 0 0 8px #0044ff, 0 0 10px #0004ff, 0 0 15px #0400ff;
+     scale: 1.1;
+     border: 2px solid black;
       }
   
   .team-member img {
@@ -153,6 +163,8 @@ margin: 20px;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: center;
     padding-top:50% ;
+    border-radius: 1rem;
+
   }
   
   .overlay h3 {
@@ -177,11 +189,11 @@ margin: 20px;
 }
 
 .main h2 {
+    display: flex;
+    justify-content: center;
     font-size:1.5rem;
     font-weight: 100;
-    margin-left: 09rem;
-
-    margin-top: 5px;
+  margin-top: 5px;
     color: #F8f8f8;
     
 }

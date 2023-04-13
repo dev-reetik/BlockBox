@@ -30,6 +30,7 @@ body {
     background-position: center;
 }
 
+
 a {
 	color: #FFFFFF;
 	font-weight: 900;
@@ -78,29 +79,62 @@ a {
     font-family: 'AudioWide';
 }
 
-.main form {
+
+
+.main {
+    width: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
+    
+    align-items: center;
+   flex-direction: column;
+  font-family: 'AudioWide';
+
+   
 }
 
-.main form label {
-    font-size: 12px;
+  
+ 
+  
+ 
+  
+.main h1{
+    display: flex;
+    justify-content: center;
+    /* font-size: 2.5rem; */
+    margin-top: 0%;
+  
+    
+}
+
+.main h2 {
+    display: flex;
+    justify-content: center;
+    font-size:1.5rem;
     font-weight: 100;
-    margin-top: 10px;
+   margin-top: 5px;
+    color: #F8f8f8;
+    font-family: sans-serif;
+    margin-left:2rem ;
+    
 }
 
-.main form button {
-    margin-left: 0%;
-    border-radius: 10px;
-}
 
-.main form input {
-    width: 600px;
+.input{
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   }
+
+   
+
+input{
+    width: 20rem;
     height: 35px;
     margin-top: 5px;
-    padding: 5px 20px;
+    /* padding: 5px 20px; */
     border: none;
     background-color: #ffffff;
     color: #38349c;
@@ -109,123 +143,70 @@ a {
     border-radius: 12px;
     transition: all 0.3s ease;
 }
+  
 
-.main {
-    width: 100%;
-    height: 100vh;
+/* 
+#cid{
+    width: 40%;
+    height: 25px;
+    border-radius: 10px;
+
+   }
+
+    */
+
+
+
+.check{
     display: flex;
     justify-content: center;
-  flex-direction: column;
-  font-family: 'AudioWide';
-
-   
+    align-items: center;
+    
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12%;
-    justify-content: center;
-   margin-top: 15px;
-    font-family: sans-serif;
-  }
-  
-  .card {
-    width: 17vw;
-    height: 33vh;
-    margin-bottom: 20px;
-    box-shadow: 1.5rem 1.6rem 4rem -2rem rgb(51, 13, 218);
+.note{
+display: flex;
+justify-content: center;
+font-family: sans-serif;
+}
 
-   
-    background-color: #001b6a;
-    box-sizing: border-box;
-    border-radius: 15px;
-    transition: .5s ease;
-     
+.files{
+    height: 50%;
+    width: 55rem;
+    align-items: center;
+    /* background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+     */
+     background-color: #37349c34;
+    
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
+    margin-top: 3%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 1.6rem;
+
+  /* border: .1rem solid #F8f8f8 ; */
+ }
 
 
-    background-color: #37349c34;
-    -webkit-backdrop-filter: blur(05px);
-    backdrop-filter: blur(05px);
-  }
-  
-  .card img {
-    max-width: 50%;
-    height: auto;
-    margin-bottom: 15px;
-  }
 
-  .card h3 {
-    
-    padding-left: 3px;
-    padding-right: 3px;
-  }
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding-top:50% ;
-    border-radius: 1rem;
-
-  }
-  
-  .overlay h3 {
-    font-size: 28px;
-    color: #fff;
-    
-  }
-  
- 
-  
-  .card:hover .overlay {
-    opacity: 5;
-  }
-  
-
-  
-.main h1{
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    margin-top: 01%;
-    
-  
-    
-}
-
-.main h4 {
-    font-size: 15px;
-    font-weight: 100;
-    margin-top: 10px;
-    padding-left: 5%;
-    padding-right: 5%;
-    color: #F8f8f8;
-    text-align: justify;
-    margin-bottom: 10px;
-}
 
 .main span#button_flex {
     display: flex;
    
     align-items: center;
     flex-direction: row;
-    margin-left: 7rem;
+    /* margin-left: 7rem; */
 }
 
 .main button {
     width: 125px;
-    height: 35px;
+    height: 30px;
     margin-top: 20px;
     padding: 5px 20px;
     border: none;
@@ -235,8 +216,8 @@ a {
     font-weight: 700;
     border-radius: 15px;
     transition: all 0.3s ease;
-    margin-left: 50px;
-    margin-right: 50px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
 }
 
 .main button:hover {
@@ -249,7 +230,7 @@ a {
     color: #ffffff;
     font-weight: 700;
     background-color: #001b6a;
-    width: 80px;
+    width: 120px;
     border-radius: 10px;
     text-align: center;
     font-size: 16px;
@@ -261,7 +242,6 @@ a {
     left: 0;
     width: 100%;
     height: 80px;
-    
    
     display: flex;
     justify-content: flex-start;

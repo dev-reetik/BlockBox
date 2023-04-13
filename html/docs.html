@@ -11,8 +11,9 @@
 </head>
 
 <body id="DOCS">
+        <div class="alan-btn"></div>
     <div class="navbar">
-        <span id="logo">MedLock</span>
+        <span id="logo">BlockBox</span>
         <a href="/index.html">Home</a>
         <a href="/html/about.html">About</a>
         <a href="/html/Team.html">Team</a>
@@ -21,19 +22,71 @@
     </div>
 
     <div class="main">
-        <h1>Documentation</h1>
-        <h4><center>Here's an overview of how <b>Medlock</b> works:</center><br>
-            <b>1. Upload files:</b> Users can easily upload files to Medlock, which are then encrypted and stored on the Filecoin network, a decentralized storage solution.<br>
-            <b>2. Authenticate using Metamask:</b> Users authenticate their identity on Medlock using Metamask, a widely-used browser extension that facilitates secure access to Ethereum-based applications.<br>
-            <b>3. Encryption and decryption:</b> All files uploaded to Medlock are encrypted, ensuring the privacy and security of user data. When a user wants to access a file, it is decrypted using their private key, which is securely stored in Metamask.<br>
-            <b>4. Retrieval and sharing of files:</b> Users can easily retrieve and share files on Medlock, with the decentralized nature of the Filecoin network enabling efficient and reliable access to stored files.<br>
-            <b>5. Integration with web3:</b> Medlock is built using web3 technologies, ensuring seamless integration with other decentralized applications and services in the broader ecosystem.
+        <h1> BlockBox Documentation</h1>
+        <h4><center>Here's an overview of how <b>BlockBox</b> works:</center><br>
         </h4>
+        <div class="card-container">
+          <div class="card">
+            <img src="/images/fox.png" alt="Card Image">
+            <h3>Register With Metamask</h3>
+            <div class="overlay">
+            <p> Easy Login by Downloading Etherium based Authentication MetaMask's Extension</p>
+            </div>
+          </div>
+          
+          <div class="card">
+            <img src="/images/user.png" alt="Card Image">
+            <h3>Login</h3>
+            <div class="overlay">
+            <p>Automatically Authenticate your identity on BlockBox using Metamask</p>
+          </div>
+          </div>
+          
+          <div class="card">
+            <img src="/images/uplaod.png" alt="Card Image">
+            <h3>Upload Files</h3>
+            <div class="overlay">
+            <p>All files uploaded to BlockBox are encypted, enduting the privacy and security of user Data.
+ </p>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <div class="card">
+            <img src="/images/security.png" alt="Card Image">
+            <h3>Encyption and Decyption</h3>
+            <div class="overlay">
+            <p>Every file is encypted with private key </p>
+          </div>
+          </div>
+          </div>
+          
+          <div class="card">
+            <img src="/images/send.png" alt="Card Image">
+            <h3>View and Sharing Files</h3>
+            <div class="overlay">
+            <p>Easy View your files in ipfs Storage Network and easily share file by 
+               just sharing the key (CID) with your friends.
+            </p>
+          </div>
+          </div>
+          
+          <div class="card">
+            <img src="/images/web-30.png" alt="Card Image">
+            <h3>Integration with Web3</h3>
+            <div class="overlay">
+            <p>BlockBox is built using Web3 technologies, ensuringseamless integration with other decentralized applications and services
+              in the broader ecosystem.
+            </p>
+          </div>
+          </div>
+        </div>
+
     </div>
 
     <div class="footer">
-        <p>MedLock &copy; 2023</p>
-        <span id="power">Powered by Replit, Metamask, FileCoin.</span>
+        <p>BlockBox &copy; 2023</p>
+        <span id="power">Powered by Alan AI, Metamask, FileCoin.</span>
     </div>
  
     <script src="three.r134.min.js"></script>
@@ -52,6 +105,20 @@
       backgroundColor: 0x0
     })
     </script>
+
+<script type="text/javascript"
+src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+ var alanBtnInstance = alanBtn({
+   key: "19cef3edd9cbd2a6c5a775ce9f97bf232e956eca572e1d8b807a3e2338fdd0dc/stage",
+   onCommand: function (commandData) {
+     if (commandData.command === "go:back") {
+       //call client code that will react on the received command
+     }
+   },
+   rootEl: document.getElementById("alan-btn"),
+ });
+</script>
 
 </body>
 

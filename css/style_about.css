@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+
 }
 
 html {
@@ -23,9 +24,9 @@ html {
 
 body {
 	font-family: 'Poppins', sans-serif;
-    background-color: #38349c;
+    background-color: black;
 	color: #FFFFFF;
-    
+   
     background-size: cover;
     background-position: center;
 }
@@ -51,6 +52,10 @@ a {
     padding: 0 20px;
     z-index: 999;
     padding-right: 50px;
+    background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(05px);
+    backdrop-filter: blur(05px);
 }
 
 .navbar a {
@@ -107,111 +112,78 @@ a {
 }
 
 .main {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
-  flex-direction: column;
+    align-items: center;
+flex-direction: row;
+  z-index: 30;
   font-family: 'AudioWide';
+  gap: 6rem;
+
 
    
 }
-.mem{
-display: flex;
-justify-content: center;
-margin-top: 05%;
-gap: 10%;
 
-}
-.team-member {
- position: relative;
-  display: inline-block;
-  height: 100%;
-margin: 20px;
- border-radius: 20px;
- box-shadow: 0 0 05px #fff;
-  }
-  .team-member:hover{
-   box-shadow: 0 0 05px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #00bfff, 0 0 70px #00bfff, 0 0 80px #00bfff, 0 0 100px #00bfff, 0 0 150px #00bfff;
-      }
-  
-  .team-member img {
-    width: 250px;
-    height: 250px;
-    border-radius: 20px;
-    display: block;
-  }
-  
-  .overlay {
+.main h1{
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s;
-    background-color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    padding-top:50% ;
-  }
-  
-  .overlay h3 {
-    font-size: 28px;
-    color: #fff;
+    top: -10rem;
+}
+.Glass{
+    height: 40%;
+    width: 45rem;
     
+    background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(05px);
+    transition: all 1s ease-out;   
+
+    backdrop-filter: blur(05px);
+    /* margin-left: 10%; */
+    /* margin-right: 10%; */
+    /* margin-top: 2%; */
+    background-color: #37349c34;
+
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: .1rem solid #F8f8f8 ; */
   }
   
- 
-  
-  .team-member:hover .overlay {
-    opacity: 1;
-  }
+
   
 .main h1{
     display: flex;
     justify-content: center;
     font-size: 3.2rem;
-    margin-top: -10%;
+    margin-top: 17%;
   
     
 }
 
-.main h2 {
-    font-size:1.5rem;
-    font-weight: 100;
-    margin-left: 09rem;
 
-    margin-top: 5px;
-    color: #F8f8f8;
-    
-}
 
-.Glass{
-    height: 30%;
-    align-items: center;
-    background: -webkit-linear-gradient(to bottom, transparent 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.8) 100%);
-    border-radius: 20px;
-    -webkit-backdrop-filter: blur(05px);
-    backdrop-filter: blur(05px);
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 05%;
+
+.youtube{
    
-  }
-  
+    border-radius: 20px;
+   /* border: 2px solid white; */
+   transition: all 1s ease-out;
+}
 
- 
-
-
-
-
-
-
-
+.youtube:hover,.Glass:hover{
+    scale: 1.1;
+}
 
 .main h4 {
     font-size: 15px;
     font-weight: 100;
+    width: 50rem;
+    text-align: center;
     margin-top: 10px;
     padding-left: 5%;
     padding-right: 5%;
@@ -229,37 +201,7 @@ margin: 20px;
     margin-left: 7rem;
 }
 
-.main button {
-    width: 125px;
-    height: 35px;
-    margin-top: 20px;
-    padding: 5px 20px;
-    border: none;
-    background-color: #001b6a;
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 15px;
-    transition: all 0.3s ease;
-    margin-left: 50px;
-    margin-right: 50px;
-}
 
-.main button:hover {
-    transform: scale(1.1);
-    color: #ffffff;
-    cursor: pointer;
-}
-
-#active {
-    color: #ffffff;
-    font-weight: 700;
-    background-color: #001b6a;
-    width: 80px;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 16px;
-}
 
 .footer {
     position: fixed;

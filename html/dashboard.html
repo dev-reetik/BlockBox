@@ -9,9 +9,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js" ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body id="DASH">
+    <div class="alan-btn"></div>
     <script type="text/javascript">
         //checking for metamask
         var account = null;
@@ -33,29 +35,82 @@
         })();
     </script>
     <div class="navbar">
-        <span id="logo">MedLock</span>
+        <span id="logo">BlockBox</span>
         <a href="/index.html">Home</a>
         <a href="/html/about.html">About</a>
-        <a href="/html/Team.html" id="active">Team</a>
+        <a href="/html/Team.html" >Team</a>
         <a href="/html/docs.html">Docs</a>
         <a href="/index.html" id="active">Logout</a>
     </div>
 
     <div class="main">
         <h1>Dashboard</h1>
-        <h2>Successfully Logged In!</h2><br>
-        <span id="button_flex">
+        
+        <div class="dashboard">
+            <div class="upload">
+                <section class="inner">
+                    <lottie-player src="https://assets6.lottiefiles.com/private_files/lf30_ilv5gvml.json"  background="transparent"  speed="1"  style="width: 220px; height: 300px;"  loop  autoplay></lottie-player>
+                </section>
+            <article>
+                <div id="DataKey">
+                    <h5>Upload the Files</h1>
+                </div>
+                <div id="button_flex">
+                    <a href="/html/upload.html"><button>Upload</button></a>
+                </div>
+            </article>
+            </div>
+
+            <div class="view">
+                <section class="inner">
+                    <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_lDoXN9kQbu.json"  background="transparent"  speed="1"  style="width: 220px; height: 300px;"  loop  autoplay></lottie-player>
+                </section>
+            <article>
+                <div id="DataKey">
+                    <h5>View Shared Files </h1>
+                </div>
+                <div id="button_flex">
+                    <a href="/html/view.html"><button> Files</button></a>
+                </div>
+            </article>
+            </div>
+
+
+            <div class="Cid">
+                <section class="inner">
+                    <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_96cnyxkh.json"  background="transparent"  speed="1"  style="width: 220px; height: 300px;"  loop  autoplay></lottie-player>   
+
+                </section>
+            <article>
+                <div id="DataKey">
+                    <h5>Your Files</h1>
+                </div>
+                <div id="button_flex">
+                    <a href="./Cid.html"><button>View Files</button></a>
+                </div>
+            </article>
+            </div>
+        
+           
+        
+            
+        </div>
+
+
+        <!-- <div>
+            <span id="button_flex">
             <a href="/html/upload.html"><button>Upload</button></a>
             <a href="/html/view.html"><button>View</button></a>
         </span>
         <span id="button_flex">
-            <a href="/index.html"><button>Logout</button></a>
+            <a href="./Cid.html"><button>Data Key</button></a>
         </span>
+        </div> -->
     </div>
 
     <div class="footer">
-        <p>MedLock &copy; 2023</p>
-        <span id="power">Powered by Replit, Metamask, FileCoin.</span>
+        <p>BlockBox &copy; 2023</p>
+        <span id="power">Powered by Alan AI Metamask, FileCoin.</span>
     </div>
     
     <script src="three.r134.min.js"></script>
@@ -74,6 +129,20 @@
       backgroundColor: 0x0
     })
     </script>
+
+<script type="text/javascript"
+src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+<script>
+ var alanBtnInstance = alanBtn({
+   key: "19cef3edd9cbd2a6c5a775ce9f97bf232e956eca572e1d8b807a3e2338fdd0dc/stage",
+   onCommand: function (commandData) {
+     if (commandData.command === "go:back") {
+       //call client code that will react on the received command
+     }
+   },
+   rootEl: document.getElementById("alan-btn"),
+ });
+</script>
 </body>
 
 </html>

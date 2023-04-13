@@ -1,17 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>Home</title>
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.halo.min.js"></script>
-</head>
-
-<body id="VANTA">
-    <div class="navbar">
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Block Box</title>
+  </head>
+  <body>
+    <div class="alan-btn"></div>
+    <div class="shadow"></div>
+    <div class="shadow1"></div>
+    <div class="shadow2"></div>
+    <div class="shadow3"></div>
+    <section>
+      <div class="navbar" data-aos="fade-down">
         <span id="logo">BlockBox  </span>
         <a href="/index.html" id="active">Home</a>
         <a href="/html/about.html">About</a>
@@ -19,38 +26,168 @@
         <a href="/html/docs.html">Docs</a>
         <a href="/html/login.html">Login</a>
     </div>
+    </section>
 
-    <div class="main">
-      
-        <h1>Block Box</h1>
-        <h2> An authorized Web3 Decentralized Storage.</h2>
-        <span id="button_flex">
-            <a href="/html/login.html"><button>Login</button></a>
-            <a href="https://metamask.io/"><button>Register</button></a>
-        </span>
-    </div>
+    <section class="sect1">
+      <article class="sect1_01" data-aos="fade-right">
+        <h1>Decentralized storage</h1>
+        <p>
+          Decentralized storage is a type of data storage system in which data
+          is stored across multiple nodes in a network rather than being stored
+          in a centralised location. This means that there is no single point of
+          failure or control, as each node is independent and operates
+          autonomously.
+        </p>
 
-    <div class="footer">
-        <p>BlockBox &copy; 2023</p>
-        <span id="power">Powered by Metamask, FileCoin.</span>
-    </div>
-  
+        <div class="sect1_btns">
+          <button class="btn1"><a href="/html/login.html">Login</a></button>
+          <button class="btn2"><a href="https://metamask.io/">Register</a></button>
+        </div>
+      </article>
+      <div class="lottieDiv" data-aos="fade-left">
+        <lottie-player
+          class="lottie"
+          src="https://assets2.lottiefiles.com/packages/lf20_me1uv4m6.json"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </section>
 
-<script src="three.r134.min.js"></script>
-<script src="vanta.halo.min.js"></script>
+    <section class="sect2" data-aos="fade-up">
+      <div class="shadow4"></div>
+      <div class="shadow5"></div>
+      <h1>Build With IPFS</h1>
+      <p class="ipfs">
+        PFS (InterPlanetary File System) is a protocol and network designed to
+        create a decentralized, peer-to-peer method of storing and sharing
+        hypermedia in a distributed file system. It is a distributed system for
+        storing and accessing files, websites, applications, and data.
+      </p>
+
+      <article class="cards" data-aos="fade-up">
+        <div class="card">
+          <h2>Completely free</h2>
+          <p>
+            IPFS is a free and open-source distributed file system that provides
+            a decentralized method of storing and sharing files, websites, and
+            data.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Lightning Fast</h2>
+          <p>
+            IPFS uses content-based addressing, which means that files are
+            identified by their unique content hash rather than a location-based
+            address. This allows for fast and efficient retrieval of files.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Cross-Chain</h2>
+          <p>
+            IPFS uses a distributed network of nodes to store and share data,
+            providing redundancy and ensuring that data is available even if
+            some nodes go offline.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>BitSwap protocol</h2>
+          <p>
+            IPFS uses the BitSwap protocol to efficiently exchange data between
+            nodes, reducing network congestion and improving performance.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="sect3" data-aos="fade-up">
+      <article>
+        <h1>Connecting BlockChains for a Seamless Future</h1>
+        <div class="sect3_01">
+          <p>
+            With blockchain, intermediaries can be eliminated, reducing costs
+            and increasing speed. Additionally, blockchain can enable new
+            business models and revenue streams, creating opportunities for
+            innovation and growth.
+          </p>
+
+          <section class="sect3_02" data-aos="fade-right">
+            <div class="bar">Secure</div>
+            <div class="bar">Reliability</div>
+            <div class="bar">Cost-effectiveness</div>
+          </section>
+        </div>
+      </article>
+
+      <div>
+        <lottie-player class="lottie2" data-aos="fade-up"
+          src="https://assets7.lottiefiles.com/private_files/lf30_3dqqvcq2.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </section>
+
+    <section class="sect4" data-aos="fade-up">
+      <h1>The future of decentralised Storage System</h1>
+      <p>
+        In the future, decentralized storage is expected to become more
+        widespread and accessible, with new technologies and platforms emerging
+        to support it. This will create new opportunities for innovation and
+        entrepreneurship, as developers and businesses leverage decentralized
+        storage to build new applications and services.
+      </p>
+
+      <article data-aos="fade-up">
+        <div class="barEx">Community driven development</div>
+        <div class="bar">BitSwap</div>
+        <div class="bar">Fastest</div>
+      </article>
+      <div>
+        <lottie-player class="lottie3" data-aos="fade-up"
+          src="https://assets8.lottiefiles.com/packages/lf20_oUYCEY6cfy.json"
+          background="transparent"
+          speed="1"
+          style="width: 300px; height: 300px"
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+    </section>
+
+ 
+
+    <footer>
+      <section class="footer" >
+        <h1>BlockBox @ 2023</h1>
+        <h1>Powered By MetaMask, IPFS and FileCoin</h1>
+      </section>
+    </footer>
+
+    <script type="text/javascript"
+src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
 <script>
-VANTA.HALO({
-    el: "#VANTA",
-  mouseControls: true,
-  touchControls: true,
-  gyroControls: false,
-  minHeight: 200.00,
-  minWidth: 200.00,
-  backgroundColor: 0x0,
-  xOffset: 0.21
-})
+ var alanBtnInstance = alanBtn({
+   key: "19cef3edd9cbd2a6c5a775ce9f97bf232e956eca572e1d8b807a3e2338fdd0dc/stage",
+   onCommand: function (commandData) {
+     if (commandData.command === "go:back") {
+       //call client code that will react on the received command
+     }
+   },
+   rootEl: document.getElementById("alan-btn"),
+ });
+</script>
+<script>
+  AOS.init();
 </script>
 
-</body>
-
+  </body>
 </html>
