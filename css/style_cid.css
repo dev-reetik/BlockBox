@@ -9,8 +9,6 @@
     &::-webkit-scrollbar{
         display: none;
       }
-
-
       
 }
 
@@ -89,37 +87,8 @@ a {
     font-family: 'AudioWide';
 }
 
-.main form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
+/* Main section  */
 
-.main form label {
-    font-size: 12px;
-    font-weight: 100;
-    margin-top: 10px;
-}
-
-.main form button {
-    margin-left: 0%;
-    border-radius: 10px;
-}
-
-.main form input {
-    width: 600px;
-    height: 35px;
-    margin-top: 5px;
-    padding: 5px 20px;
-    border: none;
-    background-color: #ffffff;
-    color: #38349c;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
 
 .main {
     width: 100%;
@@ -131,6 +100,7 @@ a {
     text-align: center;
     font-family: 'AudioWide';
 }
+
 
 
 .main h1{
@@ -221,17 +191,6 @@ table {
   tbody tr:hover {
     background-color: #060e836b;
   }
-  
-  
-
- 
-
-
-
-
-
-
-
 
 .main h4 {
     font-size: 15px;
@@ -275,6 +234,8 @@ table {
     cursor: pointer;
 }
 
+/* active  */
+
 #active {
     color: #ffffff;
     font-weight: 700;
@@ -284,6 +245,9 @@ table {
     text-align: center;
     font-size: 16px;
 }
+
+
+/* footer  */
 
 .footer {
     position: fixed;

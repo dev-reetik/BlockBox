@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+
 /* GENERAL */
 * {
   box-sizing: border-box;
@@ -35,7 +37,7 @@ a {
   text-decoration: none;
 }
 
-/* Home */
+/* NavBar */
 
 .navbar {
   position: fixed;
@@ -81,6 +83,9 @@ a {
   margin-right: 45%;
   font-family: "AudioWide";
 }
+
+
+/* Main  */
 
 .main {
   width: 100%;
@@ -180,6 +185,10 @@ a {
   cursor: pointer;
 }
 
+
+/* active  */
+
+
 #active {
   color: #ffffff;
   font-weight: 700;
@@ -189,6 +198,9 @@ a {
   text-align: center;
   font-size: 16px;
 }
+
+
+/* Footer  */
 
 .footer {
   position: fixed;

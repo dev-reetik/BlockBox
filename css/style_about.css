@@ -1,9 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
 /* GENERAL */
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {display: none};
+    
 
 }
 
@@ -37,7 +42,9 @@ a {
     text-decoration: none;
 }
 
-/* Home */
+
+
+/* Navbar */
 
 .navbar {
     position: fixed;
@@ -79,37 +86,10 @@ a {
     font-family: 'AudioWide';
 }
 
-.main form {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-}
 
-.main form label {
-    font-size: 12px;
-    font-weight: 100;
-    margin-top: 10px;
-}
 
-.main form button {
-    margin-left: 0%;
-    border-radius: 10px;
-}
+/* Main */
 
-.main form input {
-    width: 600px;
-    height: 35px;
-    margin-top: 5px;
-    padding: 5px 20px;
-    border: none;
-    background-color: #ffffff;
-    color: #38349c;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 12px;
-    transition: all 0.3s ease;
-}
 
 .main {
     width: 100vw;
@@ -130,6 +110,9 @@ flex-direction: row;
     position: absolute;
     top: -10rem;
 }
+
+
+
 .Glass{
     height: 40%;
     width: 45rem;
@@ -138,20 +121,12 @@ flex-direction: row;
     border-radius: 20px;
     -webkit-backdrop-filter: blur(05px);
     transition: all 1s ease-out;   
-
     backdrop-filter: blur(05px);
-    /* margin-left: 10%; */
-    /* margin-right: 10%; */
-    /* margin-top: 2%; */
     background-color: #37349c34;
-
-
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* border: .1rem solid #F8f8f8 ; */
   }
   
 
@@ -163,20 +138,6 @@ flex-direction: row;
     margin-top: 17%;
   
     
-}
-
-
-
-
-.youtube{
-   
-    border-radius: 20px;
-   /* border: 2px solid white; */
-   transition: all 1s ease-out;
-}
-
-.youtube:hover,.Glass:hover{
-    scale: 1.1;
 }
 
 .main h4 {
@@ -202,6 +163,41 @@ flex-direction: row;
 }
 
 
+
+/* Youtube */
+
+
+
+
+.youtube{
+   
+    border-radius: 20px;
+   transition: all 1s ease-out;
+}
+
+.youtube:hover,.Glass:hover{
+    scale: 1.1;
+}
+
+
+/* active  */
+
+#active {
+    color: #ffffff;
+    font-weight: 700;
+    background-color: #001b6a;
+    width: 80px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+
+
+
+
+
+/* Footer */
 
 .footer {
     position: fixed;

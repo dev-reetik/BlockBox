@@ -2,48 +2,81 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>About</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="/css/style_about.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>About</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="/css/style_about.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body id="ABOUT">
-    <div class="alan-btn"></div>
-    <div class="navbar">
-        <span id="logo">BlockBox</span>
-        <a href="/index.html">Home</a>
-        <a href="/html/about.html" id="active">About</a>
-        <a href="/html/Team.html">Team</a>
-        <a href="/html/docs.html">Docs</a>
-        <a href="/html/login.html">Login</a>
-    </div>
+  <div class="alan-btn"></div>
 
-    <div class="main" data-aos="fade-up">
-      
+  <!-- NavBar  -->
+
+
+  <div class="navbar">
+    <span id="logo">BlockBox</span>
+    <a href="/index.html">Home</a>
+    <a href="/html/about.html" id="active">About</a>
+    <a href="/html/Team.html">Team</a>
+    <a href="/html/docs.html">Docs</a>
+    <a href="/html/login.html">Login</a>
+  </div>
+
+
+  <!-- NavBar  -->
+
+
+
+
+  <!-- Scroll Animations -->
+  <div class="main" data-aos="fade-up">
+
+    <!-- Scroll Animations -->
+
+
+
+
+    <!-- About Section        -->
     <h1>About</h1>
-   
-    <div class="Glass" >
-        <h4><b>BlockBox</b> is a cutting-edge tool that incorporates the latest advancements in <b>web3 technologies</b> to offer a decentralized, secure and user-friendly platform for file storage and authentication. By leveraging the decentralized infrastructure of <b>Filecoin</b>, Medlock offers a robust and reliable storage solution, free from the centralized control and vulnerabilities of traditional storage systems. The platform is also built with web3 standards, ensuring seamless integration with the broader ecosystem of decentralized applications and services. BlockBox's authentication process utilizes <b>Metamask</b>, a popular browser extension that allows users to interact with web3 applications securely. With the use of web3 technologies, Medlock offers users unparalleled control over their files, providing them with the freedom to manage and share their data without relying on centralized intermediaries. In this way, Medlock represents a significant step forward in the ongoing evolution of decentralized technologies and the web3 ecosystem.</h4>
-        
-    </div>
-      <iframe   class="youtube" width="570" height="40%" src="https://www.youtube.com/embed/PXZ2Fbw7mTc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    
-    </div>
 
+    <div class="Glass">
+      <h4><b>BlockBox</b> is a cutting-edge tool that incorporates the latest advancements in <b>web3 technologies</b>
+        to offer a decentralized, secure and user-friendly platform for file storage and authentication. By leveraging
+        the decentralized infrastructure of <b>Filecoin</b>, Medlock offers a robust and reliable storage solution, free
+        from the centralized control and vulnerabilities of traditional storage systems. The platform is also built with
+        web3 standards, ensuring seamless integration with the broader ecosystem of decentralized applications and
+        services. BlockBox's authentication process utilizes <b>Metamask</b>, a popular browser extension that allows
+        users to interact with web3 applications securely. With the use of web3 technologies, Medlock offers users
+        unparalleled control over their files, providing them with the freedom to manage and share their data without
+        relying on centralized intermediaries. In this way, Medlock represents a significant step forward in the ongoing
+        evolution of decentralized technologies and the web3 ecosystem.</h4>
 
-    <div class="footer">
-        <p>BlockBox &copy; 2023</p>
-        <span id="power">Powered by Metamask, FileCoin.</span>
     </div>
-    
-    <script src="three.r134.min.js"></script>
-    <script src="vanta.net.min.js"></script>
-    <script>
+    <iframe class="youtube" width="570" height="40%" src="https://www.youtube.com/embed/PXZ2Fbw7mTc"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      allowfullscreen></iframe>
+
+  </div>
+  <!-- About Section        -->
+
+  <!-- Footer  -->
+  <div class="footer">
+    <p>BlockBox &copy; 2023</p>
+    <span id="power">Powered by Metamask,IPFS, FileCoin.</span>
+  </div>
+  <!-- Footer  -->
+
+  <!-- Vanta Animations -->
+
+  <script src="three.r134.min.js"></script>
+  <script src="vanta.net.min.js"></script>
+  <script>
     VANTA.NET({
       el: "#ABOUT",
       mouseControls: true,
@@ -55,27 +88,39 @@
       scaleMobile: 1.00,
       color: 0xa2,
       backgroundColor: 0x0
-      
-    })
-    </script>
 
-<script>
+    })
+  </script>
+  <!-- Vanta Animations -->
+
+
+
+
+  <!-- Scroll Animations  -->
+  <script>
     AOS.init();
   </script>
+  <!-- Scroll Animations  -->
 
-<script type="text/javascript"
-src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
-<script>
- var alanBtnInstance = alanBtn({
-   key: "19cef3edd9cbd2a6c5a775ce9f97bf232e956eca572e1d8b807a3e2338fdd0dc/stage",
-   onCommand: function (commandData) {
-     if (commandData.command === "go:back") {
-       //call client code that will react on the received command
-     }
-   },
-   rootEl: document.getElementById("alan-btn"),
- });
-</script>
+
+
+
+  <!-- Alan AI  -->
+  <script type="text/javascript" src="https://studio.alan.app/web/lib/alan_lib.min.js"></script>
+  <script>
+    var alanBtnInstance = alanBtn({
+      key: "19cef3edd9cbd2a6c5a775ce9f97bf232e956eca572e1d8b807a3e2338fdd0dc/stage",
+      onCommand: function (commandData) {
+        if (commandData.command === "go:back") {
+          //call client code that will react on the received command
+        }
+      },
+      rootEl: document.getElementById("alan-btn"),
+    });
+  </script>
+  <!-- Alan AI  -->
+
+
 
 </body>
 

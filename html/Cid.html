@@ -14,7 +14,8 @@
 
   <body id="CID">
 
-    <script type="text/javascript">
+    <!-- Metamask Authentication  -->
+       <script type="text/javascript">
       //checking for metamask
       var account = null;
       (async () => {
@@ -31,8 +32,14 @@
         }
       })();
     </script>
+   <!-- Metamask Authentication  -->
+
 
     <div class="alan-btn"></div>
+
+
+
+    <!-- navbar -->
     <div class="navbar">
       <span id="logo">BlockBox</span>
       <a href="/index.html">Home</a>
@@ -41,19 +48,20 @@
       <a href="/html/docs.html">Docs</a>
       <a href="/html/login.html" id="active">Logout</a>
     </div>
+    <!-- navbar -->
 
+
+
+    <!-- Section  -->
     <div class="main">
         <h1>View Files</h1>
-        
-
-        <div class="cidli" id="output">
+         <div class="cidli" id="output">
           <div id="loader"> </div>
           <table id="table">
             <thead>
               <tr>
                 <th align="center">Name</th>
                 <th class="created" align="center">CID</th>
-                <!-- <th class="created" align="center">Share</th> -->
                 <th class="created">Created On</th>
                 <th class="open created">View File</th>
               </tr>
@@ -65,12 +73,21 @@
         
       </div>
     </div>
+  <!-- Section  -->
 
+
+
+
+  <!-- Footer  -->
     <div class="footer">
       <p>BlockBox &copy; 2023</p>
-      <span id="power">Powered by Alan AI, Metamask, FileCoin.</span>
+      <span id="power">Powered by Metamask,IPFS, FileCoin.</span>
     </div>
+<!-- Footer  -->
 
+
+
+<!-- Vanta Animations -->
     <script src="three.r134.min.js"></script>
     <script src="vanta.net.min.js"></script>
     <script>
@@ -87,11 +104,19 @@
         backgroundColor: 0x0,
       });
     </script>
+<!-- Vanta Animations -->
 
+
+
+<!-- Scroll Animations -->
     <script>
       AOS.init();
     </script>
+<!-- Scroll Animations -->
 
+
+
+<!-- Alan AI -->
     <script
       type="text/javascript"
       src="https://studio.alan.app/web/lib/alan_lib.min.js"
@@ -107,6 +132,8 @@
         rootEl: document.getElementById("alan-btn"),
       });
     </script>
+    <!-- Alan AI --> 
+
     <script type="module" src="../cid.js"></script>
   </body>
 </html>
